@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA Community Web Site</title>
+    <style>
+        /* CSS stilleri buraya ekleyin */
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            background-color: #fff7dd; /* Açık Sarı */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px; /* Yuvarlak kenarlar için */
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 150px; /* Buton genişliği */
+            text-align: center; /* Buton içeriğini ortala */
+        }
+
+        .button:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, p {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #000000;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            height: 100px;
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        section {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Butonlar arasındaki boşluğu ayarlayın */
+            margin-bottom: 20px; /* İçeriklerin altındaki boşluğu ayarlayın */
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="Logo">
+            <h1>ALPHA COMMUNITY</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="button">Anasayfa</a></li>
+            <li><a href="blog.html" class="button">Blog</a></li>
+            <li><a href="about.html" class="button">Hakkımda</a></li>
+            <li><a href="contact.html" class="button">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>İçerikler</h2>
+        <div class="button-container">
+            <a href="neworder.html" class="button">Discord</a>
+        </div>
+        <div class="button-container">
+            <a href="katlanamiyorum.html" class="button">İnstagram</a>
+        </div>
+        <div class="button-container">
+            <a href="whitepaper.html" class="button">Whitepaper</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Yeni Düzen Blog. Tüm hakları saklıdır.
+    </footer>
+</body>
+</html>
