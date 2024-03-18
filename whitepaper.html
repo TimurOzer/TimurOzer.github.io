@@ -14,16 +14,17 @@
         color: #c4c4c4;
         margin: 0;
         padding: 0;
-        background-image: url('https://raw.githubusercontent.com/TimurOzer/TimurOzer.github.io/main/images/depositphotos_308048188-stock-photo-abstract-digital-background-with-small.jpg');
+        background-image: url('https://raw.githubusercontent.com/TimurOzer/TimurOzer.github.io/main/images/starts.png');
         background-size: cover;
         background-position: center;
+
 
     }
 
     /* Bölümler arası boşluk */
     section {
         margin-bottom: 40px;
-        text-align: center; /* İçeriği ortalamak için */
+        
     }
 
     h1, h2, h3 {
@@ -33,26 +34,32 @@
 
     p {
         margin-bottom: 1em;
+    padding: 0px 30px;
     }
+.button-container {
+    text-align: center; /* Dikeyde ortalamak için */
+}
 
     /* Buton stilleri */
-.button {
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    display: block;
-    margin: 0 auto;
-    transition: background-color 0.3s ease; /* Renk geçişi animasyonu */
-}
+        .button {
+            font-family: 'Poppins', sans-serif;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px; /* Yuvarlak kenarlar için */
+            background: transparent; /* Arka plan rengi transparan */
+            color: #ffffff;
+            text-decoration: none;
+            transition: background 0.3s ease; /* Arka plan renginin geçiş efekti */
+            width: 150px; /* Buton genişliği */
+            text-align: center; /* Buton içeriğini ortala */
+            border: none; /* Kenarlık yok */
+            outline: none; /* Odak çerçevesi yok */
+ margin: 0 auto; /* Butonu yatayda ortala */
+        }
 
-.button:hover {
-    background-color: #0056b3;
-}
+        .button:hover {
+            background: linear-gradient(to bottom, rgba(3, 252, 164, 0.8), rgba(220, 31, 255, 0.8)); /* %50 transparan geçişli arka plan rengi */
+        }
 
     </style>
 </head>
@@ -176,9 +183,9 @@ Long-term goals involve expanding Alpha's ecosystem and increasing the token's u
     <p>The legal status of Alpha is continuously monitored to ensure the security and protection of the project team and the community. The project team makes efforts to meet all necessary legal requirements to safeguard the security and privacy of users and investors.</p>
     </section>
 
-    <!-- Geri Dön Butonu -->
-    <button onclick="goBack()" class="button">Geri Dön</button>
-
+<div class="button-container">
+    <button onclick="goBack()" class="button">Main Page</button>
+</div>
     <!-- JavaScript kodu -->
     <script>
         function goBack() {
