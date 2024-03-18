@@ -9,13 +9,13 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
         body {
-            background-image: url('https://github.com/TimurOzer/TimurOzer.github.io/blob/main/images/AlphaWallpaper.png?raw=true');
+            background-image: url('https://github.com/TimurOzer/TimurOzer.github.io/blob/main/images/AlphaWallpaperSon.png?raw=true');
             background-size: cover; /* Ekran boyutuna göre ölçekle */
             background-position: center; /* Resmi sayfa ortasında hizala */
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            color: #000000;
+            color: #333; /* Metin rengi */
             height: 100vh; /* Ekran boyunca tam ekran yüksekliği */
             overflow: hidden; /* Scroll çubuğunu gizle */
         }
@@ -27,7 +27,7 @@
         header {
             font-family: 'Poppins', sans-serif;
             background-color: #0b1c4c; /* Koyu Mavi */
-            color: #ffffff;
+            color: #ffffff; /* Metin rengi */
             padding: 20px;
             text-align: center;
         }
@@ -46,10 +46,9 @@
             outline: none; /* Odak çerçevesi yok */
         }
 
-.button:hover {
-    background: linear-gradient(to bottom, rgba(3, 252, 164, 0.8), rgba(220, 31, 255, 0.8)); /* %50 transparan geçişli arka plan rengi */
-}
-
+        .button:hover {
+            background: linear-gradient(to bottom, rgba(3, 252, 164, 0.8), rgba(220, 31, 255, 0.8)); /* %50 transparan geçişli arka plan rengi */
+        }
 
         h1, h2, p {
             font-family: 'Roboto Condensed', sans-serif;
@@ -103,26 +102,22 @@
         section {
             margin: 20px;
             text-align: center;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px; /* Butonlar arasındaki boşluğu ayarlayın */
-            margin-bottom: 20px; /* İçeriklerin altındaki boşluğu ayarlayın */
+            color: #ffffff; /* Metin rengi */
+            display: flex; /* Yatay hizalama için */
+            align-items: center; /* Dikey hizalama için */
+            justify-content: center; /* Yatay hizalama için */
+            height: calc(100vh - 180px); /* Sayfanın yüksekliğine göre ayarlanır (header ve footer'ın toplam yüksekliği) */
         }
 
         footer {
             background-color: #0b1c4c; /* Koyu Mavi */
             color: #ffffff;
-            padding: 10px;;
+            padding: 10px;
             text-align: center;
-            position: relative; /* Pozisyonunu göreceli olarak ayarlayın */
-            margin-top: 20px; /* Üst kenarlık ekleyin */
-            width: 100%;
-            bottom: 0; /* En alta hizala */
-            left: 0; /* Sol kenara hizala */
-            right: 0; /* Sağ kenara hizala */
+            position: fixed; /* Sabit pozisyon */
+            bottom: 0; /* Sayfanın en altına hizala */
+            left: 0;
+            right: 0;
         }
 
     </style>
@@ -143,6 +138,11 @@
             <li><a href="whitepaper.html" class="button">Whitepaper</a></li>
         </ul>
     </nav>
+
+    <section>
+        <h2>Hoş Geldiniz!</h2>
+        <p>Alpha Community web sitesine hoş geldiniz. Burası sizin için birbirinden değerli içerikler sunmaktadır. Sitemizi keşfetmek için yukarıdaki menüyü kullanabilirsiniz.</p>
+    </section>
 
     <footer>
         &copy; ALPHA Community. All rights reversed.
