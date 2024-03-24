@@ -119,6 +119,34 @@
             left: 0;
             right: 0;
         }
+        @media only screen and (max-width: 768px) {
+            body {
+                background-size: contain; /* Resmi ölçekle, ancak tamamen kaplamayacak şekilde */
+            }
+
+            .logo {
+                flex-direction: column; /* Logo ve metni dikey hizala */
+            }
+
+            .logo img {
+                margin-right: 0; /* Logo ve metni yan yana hizalamak için logo margin'ini sıfırla */
+                margin-bottom: 10px; /* Logo ve metin arasına boşluk ekle */
+            }
+
+            nav ul {
+                flex-direction: column; /* Menü öğelerini dikey hizala */
+            }
+
+            nav li {
+                display: block; /* Menü öğelerini blok düzene dönüştür */
+                margin-right: 0; /* Sağ kenar boşluğunu kaldır */
+                margin-bottom: 10px; /* Menü öğeleri arasına boşluk ekle */
+            }
+
+            .button {
+                width: 100%; /* Buton genişliğini %100 yap */
+            }
+        }
 
     </style>
 </head>
