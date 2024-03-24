@@ -121,13 +121,11 @@
         }
 @media only screen and (max-width: 768px) {
     body {
-        background-size: contain; /* Resmi ölçekle, ancak tamamen kaplamayacak şekilde */
-    }
-
-    /* Arkaplan resmini 90 derece sağa döndür */
-    body {
+        background-size: cover; /* Ekran boyutuna göre ölçekle */
+        background-repeat: no-repeat; /* Tekrar etmeyi engelle */
+        background-position: center; /* Resmi sayfa ortasında hizala */
         background-image: url('https://github.com/TimurOzer/TimurOzer.github.io/blob/main/images/AlphaWallpaperSon.png?raw=true');
-        transform: rotate(90deg);
+        transform: rotate(90deg); /* Resmi 90 derece sağa döndür */
     }
 
     .logo {
@@ -153,6 +151,7 @@
         width: 100%; /* Buton genişliğini %100 yap */
     }
 }
+
 
 
     </style>
