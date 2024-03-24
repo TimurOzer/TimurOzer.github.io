@@ -119,34 +119,41 @@
             left: 0;
             right: 0;
         }
-        @media only screen and (max-width: 768px) {
-            body {
-                background-size: contain; /* Resmi ölçekle, ancak tamamen kaplamayacak şekilde */
-            }
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: contain; /* Resmi ölçekle, ancak tamamen kaplamayacak şekilde */
+    }
 
-            .logo {
-                flex-direction: column; /* Logo ve metni dikey hizala */
-            }
+    /* Arkaplan resmini 90 derece sağa döndür */
+    body {
+        background-image: url('https://github.com/TimurOzer/TimurOzer.github.io/blob/main/images/AlphaWallpaperSon.png?raw=true');
+        transform: rotate(90deg);
+    }
 
-            .logo img {
-                margin-right: 0; /* Logo ve metni yan yana hizalamak için logo margin'ini sıfırla */
-                margin-bottom: 10px; /* Logo ve metin arasına boşluk ekle */
-            }
+    .logo {
+        flex-direction: column; /* Logo ve metni dikey hizala */
+    }
 
-            nav ul {
-                flex-direction: column; /* Menü öğelerini dikey hizala */
-            }
+    .logo img {
+        margin-right: 0; /* Logo ve metni yan yana hizalamak için logo margin'ini sıfırla */
+        margin-bottom: 10px; /* Logo ve metin arasına boşluk ekle */
+    }
 
-            nav li {
-                display: block; /* Menü öğelerini blok düzene dönüştür */
-                margin-right: 0; /* Sağ kenar boşluğunu kaldır */
-                margin-bottom: 10px; /* Menü öğeleri arasına boşluk ekle */
-            }
+    nav ul {
+        flex-direction: column; /* Menü öğelerini dikey hizala */
+    }
 
-            .button {
-                width: 100%; /* Buton genişliğini %100 yap */
-            }
-        }
+    nav li {
+        display: block; /* Menü öğelerini blok düzene dönüştür */
+        margin-right: 0; /* Sağ kenar boşluğunu kaldır */
+        margin-bottom: 10px; /* Menü öğeleri arasına boşluk ekle */
+    }
+
+    .button {
+        width: 100%; /* Buton genişliğini %100 yap */
+    }
+}
+
 
     </style>
 </head>
