@@ -3,212 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALPHA WHITE PAPER</title>
+    <title>Alpha Whitepaper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome için -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-    /* Genel stil ayarları */
-    body {
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        /* Genel stil ayarları */
+        body {
             font-family: 'Poppins', sans-serif;
-        line-height: 1.6;
-        color: #c4c4c4;
-        margin: 0;
-        padding: 0;
+            margin: 0;
+            padding: 0;
         background-image: url('https://raw.githubusercontent.com/TimurOzer/TimurOzer.github.io/main/images/Background.png');
         background-size: cover;
         background-position: center;
+            background-color: #f5f5f5;
+            color: #EEEEEE;
+        }
 
+        /* Başlık stilleri */
+        h1, h2, h3 {
+            text-align: center;
+            color: #00ADB5;
+            margin-top: 20px;
+        }
 
-    }
+        /* Ana konteyner stilleri */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #222831;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    /* Bölümler arası boşluk */
-    section {
-        margin-bottom: 40px;
-        
-    }
+        /* İçerik stilleri */
+        p {
+            margin-bottom: 1.5em;
+            line-height: 1.6;
+        }
 
-    h1, h2, h3 {
-        color: #007bff;
-        text-align: center; /* Başlıkları ortalamak için */
-    }
-
-    p {
-        margin-bottom: 1em;
-    padding: 0px 30px;
-    }
-.button-container {
-    text-align: center; /* Dikeyde ortalamak için */
-}
-
-    /* Buton stilleri */
+        /* Buton stilleri */
         .button {
-            font-family: 'Poppins', sans-serif;
             display: inline-block;
             padding: 10px 20px;
-            border-radius: 20px; /* Yuvarlak kenarlar için */
-            background: transparent; /* Arka plan rengi transparan */
-            color: #ffffff;
+            background-color: #007bff;
+            color: #fff;
             text-decoration: none;
-            transition: background 0.3s ease; /* Arka plan renginin geçiş efekti */
-            width: 150px; /* Buton genişliği */
-            text-align: center; /* Buton içeriğini ortala */
-            border: none; /* Kenarlık yok */
-            outline: none; /* Odak çerçevesi yok */
- margin: 0 auto; /* Butonu yatayda ortala */
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         .button:hover {
-            background: linear-gradient(to bottom, rgba(3, 252, 164, 0.8), rgba(220, 31, 255, 0.8)); /* %50 transparan geçişli arka plan rengi */
+            background-color: #0056b3;
         }
 
+        /* Table of Contents stilleri */
+        .toc {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #393E46;
+            border-radius: 5px;
+        }
+
+        .toc a {
+            display: block;
+            color: #EEEEEE;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>ALPHA WHITE PAPER</h1>
+    <div class="container">
+        <h1>Alpha Whitepaper</h1>
+        
+        <!-- Table of Contents -->
+        <div class="toc">
+            <p><strong>Table of Contents</strong></p>
+            <a href="#executive-summary">1. Executive Summary</a>
+            <a href="#introduction">2. Introduction</a>
+            <a href="#problem-statement">3. Problem Statement</a>
+            <a href="#solution-overview">4. Solution Overview</a>
+            <a href="#market-analysis">5. Market Analysis</a>
+            <a href="#technology-and-architecture">6. Technology and Architecture</a>
+            <a href="#tokenomics">7. Tokenomics</a>
+            <a href="#roadmap">8. Roadmap</a>
+            <a href="#team">9. Team</a>
+            <a href="#partnerships-and-collaborations">10. Partnerships and Collaborations</a>
+            <a href="#regulatory-and-legal-considerations">11. Regulatory and Legal Considerations</a>
+            <a href="#risk-factors">12. Risk Factors</a>
+            <a href="#conclusion">13. Conclusion</a>
+        </div>
 
-    <!-- Summary -->
-    <section id="summary">
-        <h2>Summary</h2>
-        <p>Alpha is a memecoin connected to the Solana network and is managed by the community. Its aim is to establish a reliable bridge between investors and individuals seeking investment. Alpha aims to reduce token supply and encourage community participation by organizing various events.</p>
- <p>The initial supply of Alpha, initially launched at 100 million, was reduced to 58 million by the creator. The project provides a fast and cost-effective infrastructure integrated into the Solana network. Innovative strategies like Earn-Burn and Alpha Shares events incentivize the community and increase token value by reducing token supply.</p>
- <p>Among Alpha's future plans are expanding the community, strengthening technological infrastructure, and increasing token utility. The project aims to create a trustworthy ecosystem with a transparent management approach and community-focused mindset.</p>
-    
-</section>
-
-    <!-- Introduction -->
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>Alpha is a memecoin on the Solana network aiming to bridge the gap between investors and those seeking investment opportunities. This dynamic and innovative project, managed by a community, aims to create a fair and transparent ecosystem.</p>
-   <p>Launched on February 17th, the initial supply of 100 million Alpha tokens was reduced to 58 million by the creator. However, due to declining interest and uncertainties, the project was left unattended for a while, resulting in price declines. However, on March 6th, Alpha was revived by a group led by Timur Özer. During this period, effective advertising campaigns on Instagram and community-focused strategies reignited momentum for Alpha.</p>
-   <p>One of the most significant features of Alpha is that its contracts start with the name ALPHA. This emphasizes the project's unique identity and its establishment as a reliable asset on the Solana network.</p>
-   <p>Our main goal is to strengthen the bond between investors and potential investors. However, we adopt a community-focused approach and manage Alpha with a strong community. We believe in the value of each individual's contribution and strive to involve them in our project.</p>
-   <p>Our current price performance excites us, and our goal is to raise Alpha to the $1 level. To achieve this goal, we work together with our community and expand our project with innovative methods such as "Earn-Burn" and "Alpha Shares" events every month.</p>
-   <p>
-Alpha is not just a cryptocurrency; it's also a community movement. Therefore, we invite everyone who joins our project to become part of the growing and strengthening Alpha family.
-</p>
-    </section>
-
-    <!-- Technical Details -->
-    <section id="technical-details">
-        <h2>Technical Details</h2>
-        <p>Alpha, a memecoin on the Solana network, is integrated with Solana's fast and low-cost transaction blockchain technology. Leveraging advantages such as reliability and scalability, Alpha's technical infrastructure aims to provide users with a secure and efficient experience.</p>
-    <p>The Alpha token is created in accordance with the SPL (Solana Program Library) token standard, similar to the ERC-20 standard on the Ethereum network. This allows Alpha tokens to be transferred quickly and cost-effectively on the Solana network.</p>
-    <p>
-The Earn-Burn event constitutes an important part of Alpha's economic model. In this event, participants join a draw by sending a certain amount of Alpha tokens, and when a winner is selected, half of the collected tokens are sent to the winning wallet while the other half is burned. This process aims to reduce the token supply, increase the token's value, and encourage community participation.
-</p>
- <p>
-The Alpha Share event is the process where individuals from the Alpha community invest in a particular project through Alpha and earn a certain percentage of profit share. As the project generates profits, a portion of the profit is distributed to the rightful owners who invested with Alpha. This process not only emphasizes the significance of Alpha tokens in investment but also transforms it into an investment tool, thereby encouraging increased Alpha purchases.
-</p>
-    <p>The initial supply of Alpha tokens was released into the market at 100 million and subsequently reduced to 58 million by the creator. The targeted supply was initially set at 50 million Alpha tokens, and the entire supply is currently in circulation. No further Alpha tokens will be minted, and minting has been closed, helping to stabilize the token's value and prevent inflation.</p>
-    <p>Alpha's technical details are designed to ensure users can confidently participate in the project and are fully compliant with security standards on the Solana network.</p>
-    </section>
-
-    <!-- Problem Definition -->
-    <section id="problem-definition">
-        <h2>Problem Definition</h2>
-        <p>In the world of cryptocurrency, establishing a reliable and effective communication bridge between investors and those seeking investment has long been a persistent challenge. Unlike traditional financial systems, with the rapid global growth of cryptocurrencies, this communication gap has become even more pronounced.</p>
-       <p>Investors seeking to invest in new and potential projects require trustworthy information and accurate communication. However, in the current cryptocurrency market, there is often a lack of effective platforms or tools facilitating the coming together of projects and investors.</p>
-       <p>In this context, the primary goal of Alpha is to establish a bridge between investors and those seeking investment, creating a trustworthy, transparent, and fair ecosystem. Alpha aims to address the communication gap in the cryptocurrency world, strengthen the connection between projects and investors, and pave the way for new investments.</p>
-       <p>Therefore, the importance and necessity of Alpha are quite evident when considering the current challenges and needs in the world of cryptocurrency. Alpha aims to facilitate communication between investors and projects, thereby creating a more reliable, transparent, and efficient cryptocurrency ecosystem.</p>
-    </section>
-
-    <!-- Solution Proposal -->
-    <section id="solution-proposal">
-        <h2>Solution Proposal</h2>
-        <p>Alpha provides a unique solution to address the communication gap in the cryptocurrency world and establish a reliable bridge between investors and those seeking investment.</p>
-      <p>Firstly, as a memecoin on the Solana network, Alpha offers a reliable and fast infrastructure. Solana's scalable and low-cost transaction capabilities enable Alpha users to transact easily and cost-effectively.</p>
-      <p>
-Secondly, Alpha's innovative strategies like Earn-Burn events incentivize community participation and engagement. These activities make the Alpha token more attractive while reducing token supply, thereby increasing its value.
-</p>
-      <p>Thirdly, Alpha's community-focused management encourages community participation in project development and ensures transparency in project management. In an environment where the community is strongly involved, Alpha's growth potential and success are enhanced.</p>
-     <p>Fourth, investment events like Alpha Share increase participation in the Alpha ecosystem both from the community and investment seekers. These events boost both the popularity and value of projects.</p>
- <p>
-
-
-Additionally, Alpha's price target of $1 motivates investors and contributes to the project's growth. This target encourages the community to HODL and supports long-term success.
-</p>
-      <p>In conclusion, Alpha's solution addresses the communication gap in the cryptocurrency world by bringing together investors and projects, aiming to create a more reliable, transparent, and efficient ecosystem. Alpha's unique features and community-focused approach enhance its potential and value, promising long-term success for its users.</p>
-
-    </section>
-
-    <!-- Economy Model -->
-    <section id="economy-model">
-        <h2>Economy Model</h2>
-        <p>Alpha has an economic model that stands out with its distribution and supply of tokens, aiming to increase the project's long-term sustainability and value.</p>
-        <p>Initially, 100 million Alpha tokens were released into the market, and the supply was reduced to 58 million by the creator. The targeted supply was set at 50 million Alpha tokens initially, and the entire supply is currently in circulation. No further Alpha tokens will be minted, and minting has been closed, which helps stabilize the token's value and prevent inflation.</p>
-        <p>In Alpha's economic model, strategies aimed at reducing token supply, such as Earn-Burn events, play a significant role. These activities incentivize and increase community participation while providing a mechanism to reduce token supply and increase its value.</p>
- <p>The event is organized regularly every month.</p>
- <p>The purpose of the event is to both award the lucky individual with Alpha and to ensure Alpha burning for the community.</p>
- <p>How does the event start?</p>
- <p>To participate in the event, everyone must send 1000 Alpha to the organizer's empty wallet (the required minimum Alpha value will decrease as the Alpha value increases). All wallets sending Alpha are recorded, and their names are written on the wheel. Then the wheel is spun, and half of the collected Alpha is sent to the winning lucky individual. The remaining Alpha is sent to the burning wallet, reducing the total supply.</p>
+        <!-- Executive Summary -->
+        <section id="executive-summary">
+            <h2>1. Executive Summary</h2>
+            <p>•	Project Overview: Alpha is a memecoin based on Solana Blockchain. Our goal is to serve as a bridge between investors and entrepreneurs. We aim to ensure that people see memecoins not only as a source of entertainment but also as an investment tool. The current value is now $0.00002963 our target is reaching to $1
 <p>
-Investment models like Alpha Share increase participation in the Alpha ecosystem from both the community and investment seekers. These events enhance both the popularity and value of projects within the ecosystem.
-</p>
- <p>It is a system that connects investors with entrepreneurs.</p>
- <p>The purpose of the system is to popularize and establish the use of Alpha. It serves as a bridge between investors and entrepreneurs.</p>
- <p>How does the system work?</p>
- <p>Entrepreneurs with projects come to the Alpha Community and apply. After their applications are reviewed and they receive approval for investment, they start selling their projects. They then disclose what percentage of the profit they will be able to offer and seek assistance from the community accordingly. For example, Project X guarantees a 10% share of the profit. They expect a $10,000 donation from the Alpha community for this 10% profit share guarantee. These donations are transferred to the entrepreneurs' wallets via Alpha.</p>
- <p>If the $10,000 Alpha donation is made by different wallet owners, the 10% profit share will be distributed among the rightful owners. This ensures a secure bridge between Alpha investors and entrepreneurs. With this system, more entrepreneurs can be supported, and the reputation and usage of Alpha can be expanded. </p>
-        <p>Another factor determining the token's economic value is its use cases. Alpha tokens are designed to be used in various areas within the project. This increases token usage, contributing to demand and value appreciation.</p>
-        <p>
-Alpha's economic model is designed to support the project's long-term success. Factors such as token supply and distribution, community participation, and token usage are balanced to increase the project's sustainability and value.
-</p>
-    </section>
+<p>
+•	Key Highlights: Our most unique feature that sets us apart from other memecoins is our ability to offer people a real project. This tangible project will initially be realized through our "AlphaRooms" game. We aim to establish a connection between "game sales = increase in Alpha's price" among people. Unlike other memecoins, our low supply makes our price before $1 very attractive for investors.
+ <p>
+        </section>
 
-    <!-- Management and Community -->
-    <section id="management-and-community">
-        <h2>Management and Community</h2>
-        <p>Alpha adopts a transparent and participatory management model, embracing a community-focused approach. The project's management relies on community participation and transparency, and decision-making processes are based on community input.</p>
-        <p>The project team consists of a group of professionals with expertise and experience to ensure the management and development of Alpha. Our team has come together to realize the project's vision and respond to the needs of the community.</p>
-        <p>Community participation is central to Alpha's management. Our community actively engages on various platforms to contribute to the project's growth and development, sharing their views on the project's future.</p>
-        <p>Decision-making processes are based on community opinions and feedback. Alpha's management strives to encourage community participation and ensure transparency.</p>
-        <p>Alpha's reliance on a strong community ensures the project's success. Our community shares information about the project, involves new members, and encourages community participation.</p>
-        <p>In conclusion, Alpha's management and community structure are built on principles of transparency, participation, and community focus. The project team continuously strives to respond to the community's needs and ensure the project's long-term success.</p>
-    </section>
+        <!-- Introduction -->
+        <section id="introduction">
+            <h2>2. Introduction</h2>
+            <p> •	Background Information: Due to the fact that 99% of the recent memecoin projects have turned out to be Rug-Pulls, the trust and interest of crypto enthusiasts have significantly diminished. We are striving to rebuild trust among our investors and provide them with the necessary assurance of stable pricing.<p><p>
+•	Mission and Vision: Our Alpha project aims to reach $1 in the initial stage. Until we reach the $1 target, we encourage all investors to hold onto their investments, and we conduct efforts to support HODLing. We particularly strive to achieve this through various events, including "Earn-burn," "Alpha Share," and "AlphaRooms."
+ <p>
+        </section>
 
-    <!-- Advertising and Marketing Strategy -->
-    <section id="advertising-and-marketing-strategy">
-        <h2>Advertising and Marketing Strategy</h2>
-        <p>Alpha has adopted an effective advertising and marketing strategy to successfully promote and adopt the project. The project aims to reach the target audience and expand the community using various marketing channels.</p>
-     <p>Advertising campaigns conducted on Instagram have proven to be effective tools for reaching large audiences. Targeted advertising campaigns aim to attract the attention of potential investors and increase the project's adoption.</p>
-     <p>
-Community-focused platforms like Discord have been utilized to strengthen Alpha's community and encourage participation. These platforms enable community members to come together and exchange ideas about the project.
-</p>
-     <p>Additionally, promotion of Alpha is carried out on other platforms such as social media and cryptocurrency news sites. These platforms increase the project's visibility, allowing it to reach a wider audience.</p>
-     <p>
-The advertising and marketing strategy have a significant impact on the project's growth and success. An effective promotion and marketing strategy increase Alpha's adoption while ensuring the project's long-term success.
-</p>
-    </section>
+        <!-- Problem Statement -->
+        <section id="problem-statement">
+            <h2>3. Problem Statement</h2>
+            <p> •	Identified Problems: The recent Rug-Pull incidents and the decrease in trust towards cryptocurrency<p>
+<p>
+•	Target Audience Needs: Alpha is still at the very beginning of its journey. We ask investors to be patient during this challenging journey. As a community, we hold only a small portion of the supply. Our goal is to acquire 80% of the supply and provide a reliable, stable space.
+ <p>
+        </section>
 
-    <!-- Future Plans -->
-    <section id="future-plans">
-        <h2>Future Plans</h2>
-        <p>Alpha adopts a community-focused approach when defining its future goals, taking into consideration the project's long-term sustainability. Future plans are determined through collaboration between the project team and the community, aiming to facilitate the growth and development of the project.</p>
-      <p>Among the short-term goals is to expand Alpha's community and increase project awareness. This will be achieved through the use of various marketing strategies and encouragement of community participation.</p>
-      <p>Medium-term goals include strengthening Alpha's technological infrastructure and enhancing user experience. This will involve keeping up with updates in the Solana network and improving the project's technical features.</p>
-      <p>
-Long-term goals involve expanding Alpha's ecosystem and increasing the token's utility. This will be achieved by exploring collaborations with other projects and developing strategies for the Alpha token to be used in different industries.
-</p>
-      <p>Future plans will be continually updated through the project team's and community's ongoing feedback and adaptation to changing market conditions. With the participation and support of its community, Alpha aims to achieve its goals and grow successfully.</p>
-    </section>
+        <!-- Solution Overview -->
+        <section id="solution-overview">
+            <h2>4. Solution Overview</h2>
+            <p> •	Proposed Solution: Our most effective solution to Rug-Pull incidents is our foundation in reality. Our community pool will be funded by Timur Özer's personal company. Typically, in Rug-Pull incidents, people don't risk their careers by opening a company. However, we are showcasing ourselves to our investors in a tangible sense.<p>
+<p>
+•	To steadily increase and maintain Alpha's price, we have developed a game called "AlphaRooms." With 50% of the revenue generated from this game, our aim is to purchase Alpha tokens from our liquidity pool on Raydium to boost the price. The address "AUSDwc35fxwkHCnC5n3yyaA7U79j4U18eMA93vy7M4hf" is the community pool address for Alpha Foundation. All transactions will be conducted from this address. With the Alpha tokens accumulated here, we will provide funding to entrepreneurial friends in need of investment, integrating them into our ecosystem and aiming for exponential growth.<p>
+<p>
+•	Let's move on to our activities. What is this Alpha Shares? Entrepreneurs with projects come to the Alpha Community and apply. After their applications are reviewed and they receive approval for investment, they start selling their projects. They explain what percentage of the profits they will be able to give as a share. For example: Project X guarantees a 10% share of the profits. They expect a $10,000 donation from the Alpha community for this 10% profit share guarantee. These donations are transferred to the wallets of entrepreneurs through Alpha. After starting to earn income from the project, the entrepreneur who received the investment sends 10% of the profits to the community pool. This profit share is distributed among the Alpha holders. This way, a secure bridge is established between Alpha investors and entrepreneurs. With this system, more entrepreneurs can be supported, and the reputation and usage of Alpha can be expanded.<p>
+<p>
+•	Another event we have is Earn-Burn: To participate in the event, everyone must send 1000 Alpha to the organizer's empty wallet. (As the value of Alpha increases, the minimum required Alpha value will decrease.) All wallets sending Alpha are recorded, and their names are written on a wheel. Then the wheel is spun, and the lucky winner is sent half of the collected Alpha. The remaining Alpha is sent to a burn wallet, reducing the total supply. <p>
+<p>
+•	Value Proposition: Projects like this, Alpha has become both a reliable investment vehicle and a memecoin with a steadily increasing price.
+ <p>
+        </section>
 
-    <!-- Legal Status -->
-    <section id="legal-status">
-        <h2>Legal Status</h2>
-        <p>Alpha places great importance on legal compliance while conducting its operations. The project team takes necessary steps to ensure that the project is legally compliant and fully adheres to existing regulations.</p>
-    <p>The legal status of Alpha has been carefully examined and evaluated by the project team. The project may be subject to legal regulations in the cryptocurrency world and specific countries' financial regulations. Therefore, Alpha's legal status is concerned with complying with the legal requirements of different jurisdictions.</p>
-    <p>The project team is committed to taking necessary measures to mitigate future legal risks. This includes working with expert advisors, monitoring regulatory changes, and continuously reviewing the project's legal compliance.</p>
-    <p>The legal status of Alpha is continuously monitored to ensure the security and protection of the project team and the community. The project team makes efforts to meet all necessary legal requirements to safeguard the security and privacy of users and investors.</p>
-    </section>
+        <!-- Market Analysis -->
+        <section id="market-analysis">
+            <h2>5. Market Analysis</h2>
+            <p> •	Industry Overview: At the time of writing, our trend is stable but low. Our market cap is $1,743, with a growth target of $58,832,816.<p>
+<p>
+•	Competitive Analysis: Among Solana memecoins, there is a competitor known as FamilyToken. FamilyToken's only claim to fame is the community it has built on Instagram. However, it is not a sustainable project. Soon, its developers will likely perform a rug-pull and disappear from the market because they do not offer anything tangible like we do. The only reason for their growth is the Instagram "day one" trend, unlike us who provide real value.
+ <p>
+        </section>
 
-<div class="button-container">
-    <button onclick="goBack()" class="button">Main Page</button>
-</div>
-    <!-- JavaScript kodu -->
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+        <!-- Technology and Architecture -->
+        <section id="technology-and-architecture">
+            <h2>6. Technology and Architecture</h2>
+            <p> •	Technical Architecture: We are launching as an SPL token on the Solana network.<p><p>
+•	Smart Contracts: We currently do not have any smart contracts in place. We aim to launch our own swap system soon and target listing on major cryptocurrency exchanges.<p><p>
+•	Security Measures: Our security protocol is tied to the Solana network.
+ <p>
+        </section>
+
+        <!-- Tokenomics -->
+        <section id="tokenomics">
+            <h2>7. Tokenomics</h2>
+            <p> •	Token Distribution: The total supply is in circulation, which amounts to 58,832,816. Our liquidity pool amount is 32,571,665, which corresponds to 55% of the total supply.<p><p>
+•	Token Utility: You can use Alphas for investment purposes or hold them for potential future appreciation.
+ <p>
+        </section>
+
+        <!-- Roadmap -->
+        <section id="roadmap">
+            <h2>8. Roadmap</h2>
+            <p> •	Development Phases: We plan to make our first Alpha purchase with the revenue generated from the game around the end of May. In the following periods, we will continue to develop the game and increase our Alpha holdings every month by purchasing Alpha.<p><p>
+•	Milestones: After surpassing a market cap of 1 million, we will apply for listing on exchanges. Once we reach 20 million, we will announce our own swap system.
+ <p>
+        </section>
+
+        <!-- Team -->
+        <section id="team">
+            <h2>9. Team</h2>
+            <p> •	Core Team: Timur Özer (Founder of Alpha Community) (More will be update this soon).<p><p>
+•	Advisors: None (We will update this soon).
+ <p>
+        </section>
+
+        <!-- Partnerships and Collaborations -->
+        <section id="partnerships-and-collaborations">
+            <h2>10. Partnerships and Collaborations</h2>
+            <p> •	Current Partnerships: None<p><p>
+•	Future Collaborations: Bahcesehir University, Binance, BlueBit.
+ <p>
+        </section>
+
+        <!-- Regulatory and Legal Considerations -->
+        <section id="regulatory-and-legal-considerations">
+            <h2>11. Regulatory and Legal Considerations</h2>
+            <p> •	Compliance: At the time of writing, Alpha is still an unofficial memecoin.<p><p>
+•	Legal Structure: 
+ <p>
+        </section>
+
+        <!-- Risk Factors -->
+        <section id="risk-factors">
+            <h2>12. Risk Factors</h2>
+            <p> •	Market Risks: In the beginning, a stable market trend may be experienced.<p><p>
+•	Technical Risks: None.<p><p>
+•	Regulatory Risks: Name can clash with other coins.
+ <p>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion">
+            <h2>13. Conclusion</h2>
+            <p> •	Summary: If you've read my writings this far, you've truly valued this project. If you'd like to join our big family, you can join our Discord server. Alpha is currently a very new project and it can truly free you from your 7/24 job. You can live your life not to survive way other people but to enjoy your life.<p><p>
+•	Call to Action: Click the Link Button to access all links
+ <p>
+        </section>
+
+        <!-- Main Page Button -->
+        <div class="button-container" style="text-align: center;">
+            <a href="https://linktr.ee/alphacommunity2024" class="button">Link Button</a>
+            <br><br>
+            <a href="index.html" class="button">Main Menu</a>
+        </div>
+
+    </div>
 </body>
 </html>
