@@ -3,89 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALPHA WHITE PAPER</title>
+    <title>Alpha Whitepaper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome için -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-    /* Genel stil ayarları */
-    body {
+        /* Genel stil ayarları */
+        body {
             font-family: 'Poppins', sans-serif;
-        line-height: 1.6;
-        color: #c4c4c4;
-        margin: 0;
-        padding: 0;
-        background-image: url('https://raw.githubusercontent.com/TimurOzer/TimurOzer.github.io/main/images/Background.png');
-        background-size: cover;
-        background-position: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://raw.githubusercontent.com/TimurOzer/TimurOzer.github.io/main/images/Background.png');
+            background-size: cover;
+            background-position: center;
+            background-color: #f5f5f5;
+            color: #EEEEEE;
+        }
 
+        /* Başlık stilleri */
+        h1, h2, h3 {
+            text-align: center;
+            color: #00ADB5;
+            margin-top: 20px;
+        }
 
-    }
+        /* Ana konteyner stilleri */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #222831;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    /* Bölümler arası boşluk */
-    section {
-        margin-bottom: 40px;
-        
-    }
+        /* İçerik stilleri */
+        p {
+            margin-bottom: 1.5em;
+            line-height: 1.6;
+        }
 
-    h1, h2, h3 {
-        color: #007bff;
-        text-align: center; /* Başlıkları ortalamak için */
-    }
+        /* Buton stilleri */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-    p {
-        margin-bottom: 1em;
-    padding: 0px 30px;
-    }
+        .button:hover {
+            background-color: #0056b3;
+        }
 
-    .button-container {
-        text-align: center; /* Dikeyde ortalamak için */
-    }
+        /* Table of Contents stilleri */
+        .toc {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #393E46;
+            border-radius: 5px;
+        }
 
-    /* Buton stilleri */
-    .button {
-        font-family: 'Poppins', sans-serif;
-        display: inline-block;
-        padding: 10px 20px;
-        border-radius: 20px; /* Yuvarlak kenarlar için */
-        background: transparent; /* Arka plan rengi transparan */
-        color: #ffffff;
-        text-decoration: none;
-        transition: background 0.3s ease; /* Arka plan renginin geçiş efekti */
-        width: 150px; /* Buton genişliği */
-        text-align: center; /* Buton içeriğini ortala */
-        border: none; /* Kenarlık yok */
-        outline: none; /* Odak çerçevesi yok */
-        margin: 0 auto; /* Butonu yatayda ortala */
-    }
+        .toc a {
+            display: block;
+            color: #EEEEEE;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
 
-    .button:hover {
-        background: linear-gradient(to bottom, rgba(3, 252, 164, 0.8), rgba(220, 31, 255, 0.8)); /* %50 transparan geçişli arka plan rengi */
-    }
+        .toc a:hover {
+            text-decoration: underline;
+        }
 
-    .text-container {
-        text-align: center; /* Metni ortala */
-        margin: 20px auto; /* Dikeyde ortala */
-        width: 80%; /* Genişlik ayarı */
-    }
+        /* Responsive YouTube video */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
 
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1>Funding on Projects</h1>
+<div class="container">
+    <h1>Alpha Funding Projects</h1>
 
-    <div class="text-container">
-        <p>Working on Progress</p>
+    <!-- Table of Contents -->
+    <div class="toc">
+        <p><strong>List of Projects</strong></p>
+        <a href="#executive-summary">AlphaRooms</a>
     </div>
 
-    <div class="button-container">
-        <button onclick="goBack()" class="button">Main Page</button>
+    <!-- Executive Summary -->
+    <section id="executive-summary">
+        <h2>AlphaRooms</h2>
+        <p>Embark on an Infinite Journey: ALPHA ROOMS, fueled by the passionate Alpha Community, offers a surreal experience akin to stepping into another dimension—the Backrooms. Dive into our immersive world where reality bends, and every corner holds a mystery waiting to be unraveled.</p>
+        <p>Unlock Hidden Realms: ALPHA ROOMS, a manifestation of the Alpha Community’s creativity, invites you to explore parallel dimensions reminiscent of the enigmatic Backrooms. Join us on Discord to contribute your ideas and shape new levels, turning inspiration into reality.</p>
+        <p>Beyond Ordinary Spaces: ALPHA ROOMS, guided by the Alpha Community’s vision, transcends the mundane. It’s more than just a room—it’s a gateway to uncharted territories. Connect with fellow explorers on our Discord server and bring your wildest imaginings to life.</p>
+        <p>Remember, ALPHA ROOMS is not just a place; it’s an adventure waiting to unfold. Join our Discord community and let your creativity thrive! 🌟</p>
+    </section>
+
+    <!-- YouTube Video -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xlahG9exwNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    
-    <!-- JavaScript kodu -->
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+
+    <!-- Main Page Button -->
+    <div class="button-container" style="text-align: center;">
+        <a href="https://linktr.ee/alphacommunity2024" class="button">Steam Link</a>
+        <br><br>
+        <a href="index.html" class="button">Main Menu</a>
+    </div>
+
+</div>
 </body>
 </html>
